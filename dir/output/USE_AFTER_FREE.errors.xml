@@ -1,0 +1,32 @@
+<error>
+<domain>STATIC_C</domain>
+<lang>C</lang>
+<checker>USE_AFTER_FREE</checker>
+<file>/home/aheng/Documents/cxx/src1/test.c</file>
+<function>use_after_free</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>freed_arg</tag>
+<description>{CovLStrv2{{t{{0} frees {1}.}{{code{free}}}{{code{p}}}}}}</description>
+<line>46</line>
+</event>
+<event>
+<main>true</main>
+<tag>deref_after_free</tag>
+<description>{CovLStrv2{{t{Dereferencing freed pointer {0}.}{{code{p}}}}}}</description>
+<line>47</line>
+</event>
+<extra>p</extra>
+<subcategory>deref_write_after_free</subcategory>
+<typePropertiesGroup>
+<category>Memory - corruptions</category>
+<impact>High</impact>
+<type>Write to pointer after free</type>
+<cwe>416</cwe>
+<localEffect>This could cause an immediate crash or incorrect values might be read subsequently; the allocator's own data structures may also be corrupted.</localEffect>
+<longDescription>Write to target of a freed pointer</longDescription>
+<qualityKind>true</qualityKind>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>

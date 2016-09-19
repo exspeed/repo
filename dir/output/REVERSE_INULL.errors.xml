@@ -1,0 +1,62 @@
+<error>
+<domain>STATIC_C</domain>
+<lang>C</lang>
+<checker>REVERSE_INULL</checker>
+<file>/home/aheng/Documents/cxx/src2/test.c</file>
+<function>reverse_null</function>
+<score>100</score>
+<ordered>false</ordered>
+<event>
+<tag>deref_ptr</tag>
+<description>{CovLStrv2{{t{Directly dereferencing pointer {0}.}{{code{input}}}}}}</description>
+<line>25</line>
+</event>
+<event>
+<main>true</main>
+<tag>check_after_deref</tag>
+<description>{CovLStrv2{{t{Null-checking {0} suggests that it may be null, but it has already been dereferenced on all paths leading to the check.}{{code{input}}}}}}</description>
+<line>26</line>
+</event>
+<extra>input</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Null pointer dereferences</category>
+<impact>Medium</impact>
+<type>Dereference before null check</type>
+<cwe>476</cwe>
+<localEffect>There may be a null pointer dereference, or else the comparison against null is unnecessary.</localEffect>
+<longDescription>All paths that lead to this null pointer comparison already dereference the pointer earlier</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<lang>C</lang>
+<checker>REVERSE_INULL</checker>
+<file>/home/aheng/Documents/cxx/src1/test.c</file>
+<function>reverse_null</function>
+<score>100</score>
+<ordered>false</ordered>
+<event>
+<tag>deref_ptr</tag>
+<description>{CovLStrv2{{t{Directly dereferencing pointer {0}.}{{code{input}}}}}}</description>
+<line>24</line>
+</event>
+<event>
+<main>true</main>
+<tag>check_after_deref</tag>
+<description>{CovLStrv2{{t{Null-checking {0} suggests that it may be null, but it has already been dereferenced on all paths leading to the check.}{{code{input}}}}}}</description>
+<line>25</line>
+</event>
+<extra>input</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Null pointer dereferences</category>
+<impact>Medium</impact>
+<type>Dereference before null check</type>
+<cwe>476</cwe>
+<localEffect>There may be a null pointer dereference, or else the comparison against null is unnecessary.</localEffect>
+<longDescription>All paths that lead to this null pointer comparison already dereference the pointer earlier</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>

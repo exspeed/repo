@@ -1,0 +1,4 @@
+[LOG] run: /home/aheng/cov-analysis-linux64-8.6.0/bin/cov-format-errors --dir /home/aheng/Documents/cxx/dir --json-output-v5 /home/aheng/Documents/cxx/dir/output/cov-blame/errors.json --outputdir /home/aheng/Documents/cxx/dir/output
+[LOG] /home/aheng/cov-analysis-linux64-8.6.0/bin/cov-format-errors exits successfully.
+[INFO] Computing likely owner for 10016 [2dd112556487a38b24b9b53f5db87008]:
+[INFO] 	default_component_owner: none

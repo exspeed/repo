@@ -1,0 +1,740 @@
+<error>
+<domain>STATIC_C</domain>
+<lang>C</lang>
+<checker>RESOURCE_LEAK</checker>
+<file>/home/aheng/Documents/cxx/src1/test.c</file>
+<function>paths</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>alloc_fn</tag>
+<description>{CovLStrv2{{t{Storage is returned from allocation function {0}.}{{code{malloc}}}}}}</description>
+<line>129</line>
+</event>
+<event>
+<tag>var_assign</tag>
+<description>{CovLStrv2{{t{Assigning: {0} = storage returned from {1}.}{{code{p}}}{{code{malloc(12UL)}}}}}}</description>
+<line>129</line>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch.}{{code{!p}}}}}}</description>
+<line>131</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>if_end</tag>
+<description>{CovLStrv2{{t{End of if statement.}}}}</description>
+<line>132</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch.}{{code{!some_other_function()}}}}}}</description>
+<line>134</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>if_end</tag>
+<description>{CovLStrv2{{t{End of if statement.}}}}</description>
+<line>137</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch.}{{code{!yet_another_function()}}}}}}</description>
+<line>139</line>
+<path_event></path_event>
+</event>
+<event>
+<main>true</main>
+<tag>leaked_storage</tag>
+<description>{CovLStrv2{{t{Variable {0} going out of scope leaks the storage it points to.}{{code{p}}}}}}</description>
+<line>140</line>
+</event>
+<extra>p</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Resource leaks</category>
+<impact>High</impact>
+<type>Resource leak</type>
+<cwe>404</cwe>
+<localEffect>The system resource will not be reclaimed and reused, reducing the future availability of the resource.</localEffect>
+<longDescription>Leak of memory or pointers to system resources</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<lang>C</lang>
+<checker>RESOURCE_LEAK</checker>
+<file>/home/aheng/Documents/cxx/src2/test.c</file>
+<function>uninit</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>alloc_fn</tag>
+<description>{CovLStrv2{{t{Storage is returned from allocation function {0}.}{{code{malloc}}}}}}</description>
+<line>95</line>
+</event>
+<event>
+<tag>var_assign</tag>
+<description>{CovLStrv2{{t{Assigning: {0} = storage returned from {1}.}{{code{p}}}{{code{malloc(1UL)}}}}}}</description>
+<line>95</line>
+</event>
+<event>
+<main>true</main>
+<tag>leaked_storage</tag>
+<description>{CovLStrv2{{t{Variable {0} going out of scope leaks the storage it points to.}{{code{p}}}}}}</description>
+<line>97</line>
+</event>
+<extra>p</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Resource leaks</category>
+<impact>High</impact>
+<type>Resource leak</type>
+<cwe>404</cwe>
+<localEffect>The system resource will not be reclaimed and reused, reducing the future availability of the resource.</localEffect>
+<longDescription>Leak of memory or pointers to system resources</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<lang>C</lang>
+<checker>RESOURCE_LEAK</checker>
+<file>/home/aheng/Documents/cxx/src2/test.c</file>
+<function>size_check</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>alloc_fn</tag>
+<description>{CovLStrv2{{t{Storage is returned from allocation function {0}.}{{code{malloc}}}}}}</description>
+<line>56</line>
+</event>
+<event>
+<tag>var_assign</tag>
+<description>{CovLStrv2{{t{Assigning: {0} = storage returned from {1}.}{{code{p}}}{{code{malloc(8UL)}}}}}}</description>
+<line>56</line>
+</event>
+<event>
+<main>true</main>
+<tag>leaked_storage</tag>
+<description>{CovLStrv2{{t{Variable {0} going out of scope leaks the storage it points to.}{{code{p}}}}}}</description>
+<line>57</line>
+</event>
+<extra>p</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Resource leaks</category>
+<impact>High</impact>
+<type>Resource leak</type>
+<cwe>404</cwe>
+<localEffect>The system resource will not be reclaimed and reused, reducing the future availability of the resource.</localEffect>
+<longDescription>Leak of memory or pointers to system resources</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<lang>C</lang>
+<checker>RESOURCE_LEAK</checker>
+<file>/home/aheng/Documents/cxx/src2/test.c</file>
+<function>resource_leak_2</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>alloc_fn</tag>
+<description>{CovLStrv2{{t{Storage is returned from allocation function {0}.}{{code{malloc}}}}}}</description>
+<line>38</line>
+</event>
+<event>
+<tag>var_assign</tag>
+<description>{CovLStrv2{{t{Assigning: {0} = storage returned from {1}.}{{code{p}}}{{code{malloc(4UL)}}}}}}</description>
+<line>38</line>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch.}{{code{!p}}}}}}</description>
+<line>40</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch.}{{code{!q}}}}}}</description>
+<line>40</line>
+<path_event></path_event>
+</event>
+<event>
+<main>true</main>
+<tag>leaked_storage</tag>
+<description>{CovLStrv2{{t{Variable {0} going out of scope leaks the storage it points to.}{{code{p}}}}}}</description>
+<line>41</line>
+</event>
+<extra>p</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Resource leaks</category>
+<impact>High</impact>
+<type>Resource leak</type>
+<cwe>404</cwe>
+<localEffect>The system resource will not be reclaimed and reused, reducing the future availability of the resource.</localEffect>
+<longDescription>Leak of memory or pointers to system resources</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<lang>C</lang>
+<checker>RESOURCE_LEAK</checker>
+<file>/home/aheng/Documents/cxx/src2/test.c</file>
+<function>resource_leak_2</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>alloc_fn</tag>
+<description>{CovLStrv2{{t{Storage is returned from allocation function {0}.}{{code{malloc}}}}}}</description>
+<line>38</line>
+</event>
+<event>
+<tag>var_assign</tag>
+<description>{CovLStrv2{{t{Assigning: {0} = storage returned from {1}.}{{code{p}}}{{code{malloc(4UL)}}}}}}</description>
+<line>38</line>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch.}{{code{!p}}}}}}</description>
+<line>40</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch.}{{code{!q}}}}}}</description>
+<line>40</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>if_end</tag>
+<description>{CovLStrv2{{t{End of if statement.}}}}</description>
+<line>41</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<main>true</main>
+<tag>leaked_storage</tag>
+<description>{CovLStrv2{{t{Variable {0} going out of scope leaks the storage it points to.}{{code{p}}}}}}</description>
+<line>42</line>
+</event>
+<extra>p</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Resource leaks</category>
+<impact>High</impact>
+<type>Resource leak</type>
+<cwe>404</cwe>
+<localEffect>The system resource will not be reclaimed and reused, reducing the future availability of the resource.</localEffect>
+<longDescription>Leak of memory or pointers to system resources</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<lang>C</lang>
+<checker>RESOURCE_LEAK</checker>
+<file>/home/aheng/Documents/cxx/src2/test.c</file>
+<function>resource_leak_2</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>alloc_fn</tag>
+<description>{CovLStrv2{{t{Storage is returned from allocation function {0}.}{{code{malloc}}}}}}</description>
+<line>39</line>
+</event>
+<event>
+<tag>var_assign</tag>
+<description>{CovLStrv2{{t{Assigning: {0} = storage returned from {1}.}{{code{q}}}{{code{malloc(12UL)}}}}}}</description>
+<line>39</line>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch.}{{code{!p}}}}}}</description>
+<line>40</line>
+<path_event></path_event>
+</event>
+<event>
+<main>true</main>
+<tag>leaked_storage</tag>
+<description>{CovLStrv2{{t{Variable {0} going out of scope leaks the storage it points to.}{{code{q}}}}}}</description>
+<line>41</line>
+</event>
+<extra>q</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Resource leaks</category>
+<impact>High</impact>
+<type>Resource leak</type>
+<cwe>404</cwe>
+<localEffect>The system resource will not be reclaimed and reused, reducing the future availability of the resource.</localEffect>
+<longDescription>Leak of memory or pointers to system resources</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<lang>C</lang>
+<checker>RESOURCE_LEAK</checker>
+<file>/home/aheng/Documents/cxx/src2/test.c</file>
+<function>resource_leak_2</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>alloc_fn</tag>
+<description>{CovLStrv2{{t{Storage is returned from allocation function {0}.}{{code{malloc}}}}}}</description>
+<line>39</line>
+</event>
+<event>
+<tag>var_assign</tag>
+<description>{CovLStrv2{{t{Assigning: {0} = storage returned from {1}.}{{code{q}}}{{code{malloc(12UL)}}}}}}</description>
+<line>39</line>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch.}{{code{!p}}}}}}</description>
+<line>40</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch.}{{code{!q}}}}}}</description>
+<line>40</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>if_end</tag>
+<description>{CovLStrv2{{t{End of if statement.}}}}</description>
+<line>41</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<main>true</main>
+<tag>leaked_storage</tag>
+<description>{CovLStrv2{{t{Variable {0} going out of scope leaks the storage it points to.}{{code{q}}}}}}</description>
+<line>42</line>
+</event>
+<extra>q</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Resource leaks</category>
+<impact>High</impact>
+<type>Resource leak</type>
+<cwe>404</cwe>
+<localEffect>The system resource will not be reclaimed and reused, reducing the future availability of the resource.</localEffect>
+<longDescription>Leak of memory or pointers to system resources</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<lang>C</lang>
+<checker>RESOURCE_LEAK</checker>
+<file>/home/aheng/Documents/cxx/src2/test.c</file>
+<function>resource_leak</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>alloc_fn</tag>
+<description>{CovLStrv2{{t{Storage is returned from allocation function {0}.}{{code{malloc}}}}}}</description>
+<line>32</line>
+</event>
+<event>
+<tag>var_assign</tag>
+<description>{CovLStrv2{{t{Assigning: {0} = storage returned from {1}.}{{code{p}}}{{code{malloc(4UL)}}}}}}</description>
+<line>32</line>
+</event>
+<event>
+<main>true</main>
+<tag>leaked_storage</tag>
+<description>{CovLStrv2{{t{Variable {0} going out of scope leaks the storage it points to.}{{code{p}}}}}}</description>
+<line>34</line>
+</event>
+<extra>p</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Resource leaks</category>
+<impact>High</impact>
+<type>Resource leak</type>
+<cwe>404</cwe>
+<localEffect>The system resource will not be reclaimed and reused, reducing the future availability of the resource.</localEffect>
+<longDescription>Leak of memory or pointers to system resources</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<lang>C</lang>
+<checker>RESOURCE_LEAK</checker>
+<file>/home/aheng/Documents/cxx/src2/test.c</file>
+<function>paths</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>alloc_fn</tag>
+<description>{CovLStrv2{{t{Storage is returned from allocation function {0}.}{{code{malloc}}}}}}</description>
+<line>133</line>
+</event>
+<event>
+<tag>var_assign</tag>
+<description>{CovLStrv2{{t{Assigning: {0} = storage returned from {1}.}{{code{p}}}{{code{malloc(12UL)}}}}}}</description>
+<line>133</line>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch.}{{code{!p}}}}}}</description>
+<line>135</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>if_end</tag>
+<description>{CovLStrv2{{t{End of if statement.}}}}</description>
+<line>136</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch.}{{code{!some_other_function()}}}}}}</description>
+<line>138</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>if_end</tag>
+<description>{CovLStrv2{{t{End of if statement.}}}}</description>
+<line>141</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch.}{{code{!yet_another_function()}}}}}}</description>
+<line>143</line>
+<path_event></path_event>
+</event>
+<event>
+<main>true</main>
+<tag>leaked_storage</tag>
+<description>{CovLStrv2{{t{Variable {0} going out of scope leaks the storage it points to.}{{code{p}}}}}}</description>
+<line>144</line>
+</event>
+<extra>p</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Resource leaks</category>
+<impact>High</impact>
+<type>Resource leak</type>
+<cwe>404</cwe>
+<localEffect>The system resource will not be reclaimed and reused, reducing the future availability of the resource.</localEffect>
+<longDescription>Leak of memory or pointers to system resources</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<lang>C</lang>
+<checker>RESOURCE_LEAK</checker>
+<file>/home/aheng/Documents/cxx/src1/test.c</file>
+<function>size_check</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>alloc_fn</tag>
+<description>{CovLStrv2{{t{Storage is returned from allocation function {0}.}{{code{malloc}}}}}}</description>
+<line>55</line>
+</event>
+<event>
+<tag>var_assign</tag>
+<description>{CovLStrv2{{t{Assigning: {0} = storage returned from {1}.}{{code{p}}}{{code{malloc(8UL)}}}}}}</description>
+<line>55</line>
+</event>
+<event>
+<main>true</main>
+<tag>leaked_storage</tag>
+<description>{CovLStrv2{{t{Variable {0} going out of scope leaks the storage it points to.}{{code{p}}}}}}</description>
+<line>56</line>
+</event>
+<extra>p</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Resource leaks</category>
+<impact>High</impact>
+<type>Resource leak</type>
+<cwe>404</cwe>
+<localEffect>The system resource will not be reclaimed and reused, reducing the future availability of the resource.</localEffect>
+<longDescription>Leak of memory or pointers to system resources</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<lang>C</lang>
+<checker>RESOURCE_LEAK</checker>
+<file>/home/aheng/Documents/cxx/src1/test.c</file>
+<function>resource_leak_2</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>alloc_fn</tag>
+<description>{CovLStrv2{{t{Storage is returned from allocation function {0}.}{{code{malloc}}}}}}</description>
+<line>37</line>
+</event>
+<event>
+<tag>var_assign</tag>
+<description>{CovLStrv2{{t{Assigning: {0} = storage returned from {1}.}{{code{p}}}{{code{malloc(4UL)}}}}}}</description>
+<line>37</line>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch.}{{code{!p}}}}}}</description>
+<line>39</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch.}{{code{!q}}}}}}</description>
+<line>39</line>
+<path_event></path_event>
+</event>
+<event>
+<main>true</main>
+<tag>leaked_storage</tag>
+<description>{CovLStrv2{{t{Variable {0} going out of scope leaks the storage it points to.}{{code{p}}}}}}</description>
+<line>40</line>
+</event>
+<extra>p</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Resource leaks</category>
+<impact>High</impact>
+<type>Resource leak</type>
+<cwe>404</cwe>
+<localEffect>The system resource will not be reclaimed and reused, reducing the future availability of the resource.</localEffect>
+<longDescription>Leak of memory or pointers to system resources</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<lang>C</lang>
+<checker>RESOURCE_LEAK</checker>
+<file>/home/aheng/Documents/cxx/src1/test.c</file>
+<function>resource_leak_2</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>alloc_fn</tag>
+<description>{CovLStrv2{{t{Storage is returned from allocation function {0}.}{{code{malloc}}}}}}</description>
+<line>37</line>
+</event>
+<event>
+<tag>var_assign</tag>
+<description>{CovLStrv2{{t{Assigning: {0} = storage returned from {1}.}{{code{p}}}{{code{malloc(4UL)}}}}}}</description>
+<line>37</line>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch.}{{code{!p}}}}}}</description>
+<line>39</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch.}{{code{!q}}}}}}</description>
+<line>39</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>if_end</tag>
+<description>{CovLStrv2{{t{End of if statement.}}}}</description>
+<line>40</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<main>true</main>
+<tag>leaked_storage</tag>
+<description>{CovLStrv2{{t{Variable {0} going out of scope leaks the storage it points to.}{{code{p}}}}}}</description>
+<line>41</line>
+</event>
+<extra>p</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Resource leaks</category>
+<impact>High</impact>
+<type>Resource leak</type>
+<cwe>404</cwe>
+<localEffect>The system resource will not be reclaimed and reused, reducing the future availability of the resource.</localEffect>
+<longDescription>Leak of memory or pointers to system resources</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<lang>C</lang>
+<checker>RESOURCE_LEAK</checker>
+<file>/home/aheng/Documents/cxx/src1/test.c</file>
+<function>resource_leak_2</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>alloc_fn</tag>
+<description>{CovLStrv2{{t{Storage is returned from allocation function {0}.}{{code{malloc}}}}}}</description>
+<line>38</line>
+</event>
+<event>
+<tag>var_assign</tag>
+<description>{CovLStrv2{{t{Assigning: {0} = storage returned from {1}.}{{code{q}}}{{code{malloc(12UL)}}}}}}</description>
+<line>38</line>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch.}{{code{!p}}}}}}</description>
+<line>39</line>
+<path_event></path_event>
+</event>
+<event>
+<main>true</main>
+<tag>leaked_storage</tag>
+<description>{CovLStrv2{{t{Variable {0} going out of scope leaks the storage it points to.}{{code{q}}}}}}</description>
+<line>40</line>
+</event>
+<extra>q</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Resource leaks</category>
+<impact>High</impact>
+<type>Resource leak</type>
+<cwe>404</cwe>
+<localEffect>The system resource will not be reclaimed and reused, reducing the future availability of the resource.</localEffect>
+<longDescription>Leak of memory or pointers to system resources</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<lang>C</lang>
+<checker>RESOURCE_LEAK</checker>
+<file>/home/aheng/Documents/cxx/src1/test.c</file>
+<function>resource_leak_2</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>alloc_fn</tag>
+<description>{CovLStrv2{{t{Storage is returned from allocation function {0}.}{{code{malloc}}}}}}</description>
+<line>38</line>
+</event>
+<event>
+<tag>var_assign</tag>
+<description>{CovLStrv2{{t{Assigning: {0} = storage returned from {1}.}{{code{q}}}{{code{malloc(12UL)}}}}}}</description>
+<line>38</line>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch.}{{code{!p}}}}}}</description>
+<line>39</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch.}{{code{!q}}}}}}</description>
+<line>39</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>if_end</tag>
+<description>{CovLStrv2{{t{End of if statement.}}}}</description>
+<line>40</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<main>true</main>
+<tag>leaked_storage</tag>
+<description>{CovLStrv2{{t{Variable {0} going out of scope leaks the storage it points to.}{{code{q}}}}}}</description>
+<line>41</line>
+</event>
+<extra>q</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Resource leaks</category>
+<impact>High</impact>
+<type>Resource leak</type>
+<cwe>404</cwe>
+<localEffect>The system resource will not be reclaimed and reused, reducing the future availability of the resource.</localEffect>
+<longDescription>Leak of memory or pointers to system resources</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<lang>C</lang>
+<checker>RESOURCE_LEAK</checker>
+<file>/home/aheng/Documents/cxx/src1/test.c</file>
+<function>resource_leak</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>alloc_fn</tag>
+<description>{CovLStrv2{{t{Storage is returned from allocation function {0}.}{{code{malloc}}}}}}</description>
+<line>31</line>
+</event>
+<event>
+<tag>var_assign</tag>
+<description>{CovLStrv2{{t{Assigning: {0} = storage returned from {1}.}{{code{p}}}{{code{malloc(4UL)}}}}}}</description>
+<line>31</line>
+</event>
+<event>
+<main>true</main>
+<tag>leaked_storage</tag>
+<description>{CovLStrv2{{t{Variable {0} going out of scope leaks the storage it points to.}{{code{p}}}}}}</description>
+<line>33</line>
+</event>
+<extra>p</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Resource leaks</category>
+<impact>High</impact>
+<type>Resource leak</type>
+<cwe>404</cwe>
+<localEffect>The system resource will not be reclaimed and reused, reducing the future availability of the resource.</localEffect>
+<longDescription>Leak of memory or pointers to system resources</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>

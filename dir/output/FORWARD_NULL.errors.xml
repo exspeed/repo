@@ -1,0 +1,62 @@
+<error>
+<domain>STATIC_C</domain>
+<lang>C</lang>
+<checker>FORWARD_NULL</checker>
+<file>/home/aheng/Documents/cxx/src2/test.c</file>
+<function>forward_null</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>assign_zero</tag>
+<description>{CovLStrv2{{t{Assigning: {0} {1}= {2}.}{{code{p}}}{}{{code{NULL}}}}}}</description>
+<line>19</line>
+</event>
+<event>
+<main>true</main>
+<tag>var_deref_op</tag>
+<description>{CovLStrv2{{t{Dereferencing null pointer {0}.}{{code{p}}}}}}</description>
+<line>20</line>
+</event>
+<extra>p</extra>
+<subcategory>deref_constant_null</subcategory>
+<typePropertiesGroup>
+<category>Null pointer dereferences</category>
+<impact>Medium</impact>
+<type>Explicit null dereferenced</type>
+<cwe>476</cwe>
+<localEffect>A null pointer dereference will occur.</localEffect>
+<longDescription>Dereference of an explicit null value</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<lang>C</lang>
+<checker>FORWARD_NULL</checker>
+<file>/home/aheng/Documents/cxx/src1/test.c</file>
+<function>forward_null</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>assign_zero</tag>
+<description>{CovLStrv2{{t{Assigning: {0} {1}= {2}.}{{code{p}}}{}{{code{NULL}}}}}}</description>
+<line>18</line>
+</event>
+<event>
+<main>true</main>
+<tag>var_deref_op</tag>
+<description>{CovLStrv2{{t{Dereferencing null pointer {0}.}{{code{p}}}}}}</description>
+<line>19</line>
+</event>
+<extra>p</extra>
+<subcategory>deref_constant_null</subcategory>
+<typePropertiesGroup>
+<category>Null pointer dereferences</category>
+<impact>Medium</impact>
+<type>Explicit null dereferenced</type>
+<cwe>476</cwe>
+<localEffect>A null pointer dereference will occur.</localEffect>
+<longDescription>Dereference of an explicit null value</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>

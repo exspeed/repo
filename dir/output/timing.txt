@@ -1,0 +1,137 @@
+timer                                            ms      calls
+--------------------------------------------------------------
+sequential initialization                        10          1
+  Looking for translation units                   0          1
+  Computing links for translation units           0          1
+  xfer symbol cache                               0          1
+  Computing virtual overrides                     1          1
+  Computing callgraph                             2          1
+  Topologically sorting functions                 0          1
+Computing node costs                              1          1
+Analysis run                                     47          1
+  loadFromEmit                                    9         62
+    RELAX_NULL_RETURN                             0         31
+    ARRAY_VS_SINGLETON_pass1                      0         31
+    CHECKED_RETURN_pass1                          0         31
+    RELAX_ALLOC                                   0         31
+  ADDR_ARG_STAT                                   0          1
+  CHECKED_RETURN_STAT                             0          1
+  FUNCTION_METRICS                                1         32
+  ASSERT_SIDE_EFFECT                              0          1
+  BAD_ALLOC_ARITHMETIC                            0          1
+  BAD_ALLOC_STRLEN                                0          1
+  BAD_COMPARE                                     0          1
+  BAD_SIZEOF                                      0          1
+  CHAR_IO                                         0          1
+  CONSTANT_EXPRESSION_RESULT                      0          1
+  COPY_PASTE_ERROR                                0          1
+  DERIVE_PTR_ARITH                                0          1
+  DUMMY_DERIVER_EXCEPTIONS                        0          1
+  DUMMY_DERIVER_PTR_ARITH                         0          1
+  DUMMY_DERIVER_STACK_USE                         0          1
+  DUMMY_DERIVER_UNINIT                            0          1
+  EVALUATION_ORDER                                0          1
+  IDENTICAL_BRANCHES                              0          1
+  IFACE_TRACKER                                   0          3
+  INFINITE_LOOP                                   0          1
+  MISSING_BREAK                                   0          1
+  NESTING_INDENT_MISMATCH                         0          1
+  NO_EFFECT                                       0          1
+  PASS_BY_VALUE                                   0          1
+  RELAX_ACCESS_DBUFFER                            0          1
+  RELAX_ALLOC                                     0          1
+  RELAX_BUFFER_SIZE                               0          1
+  RELAX_CHECKED_RETURN                            0          1
+  RELAX_DEREF_ARGS                                0          1
+  RELAX_FREED_ARGS                                0          1
+  RELAX_INDEX_GENERIC                             0          1
+  RELAX_INDEX_STATIC                              0          1
+  RELAX_MAYREAD_NONPTR_FIELDS                     0          1
+  RELAX_MAYWRITE                                  0          1
+  RELAX_MAYWRITE_ALL_FIELDS                       0          1
+  RELAX_MAYWRITE_NONPTR_FIELDS                    0          1
+  RELAX_MAYWRITE_NONPTR_FIELDS_UNINIT             0          1
+  RELAX_NEGATIVE_RETURN                           0          1
+  RELAX_NEGATIVE_SINK                             0          1
+  RELAX_NOTHING                                   0          1
+  RELAX_NULL_RETURN                               0          1
+  RELAX_PARAM_NAMES                               0          1
+  RELAX_READ                                      0          1
+  RELAX_UNCAUGHT_EXCEPT                           0          1
+  RELAX_UNINIT_ALLOC                              0          1
+  REVERSE_INULL                                   0          1
+  SIGN_EXTENSION                                  0          1
+  SIZEOF_MISMATCH                                 0          1
+  STRAY_SEMICOLON                                 0          1
+  SWAPPED_ARGUMENTS                               0          1
+  UNINTENDED_INTEGER_DIVISION                     0          1
+  UNREACHABLE                                     0          1
+  UNUSED_VALUE                                    0          1
+
+activity                                         ms      calls
+--------------------------------------------------------------
+IFACE_TRACKER                                     0          3
+ARRAY_VS_SINGLETON_pass1                          0         31
+ASSERT_SIDE_EFFECT                                0          1
+BAD_ALLOC_ARITHMETIC                              0          1
+BAD_ALLOC_STRLEN                                  0          1
+BAD_COMPARE                                       0          1
+BAD_SIZEOF                                        0          1
+CHAR_IO                                           0          1
+CHECKED_RETURN_pass1                              0         31
+CONSTANT_EXPRESSION_RESULT                        0          1
+COPY_PASTE_ERROR                                  0          1
+EVALUATION_ORDER                                  0          1
+IDENTICAL_BRANCHES                                0          1
+INFINITE_LOOP                                     0          1
+MISSING_BREAK                                     0          1
+NESTING_INDENT_MISMATCH                           0          1
+NO_EFFECT                                         0          1
+PASS_BY_VALUE                                     0          1
+REVERSE_INULL                                     0          1
+SIGN_EXTENSION                                    0          1
+SIZEOF_MISMATCH                                   0          1
+STRAY_SEMICOLON                                   0          1
+SWAPPED_ARGUMENTS                                 0          1
+UNINTENDED_INTEGER_DIVISION                       0          1
+UNREACHABLE                                       0          1
+UNUSED_VALUE                                      0          1
+FUNCTION_METRICS                                  1         32
+RELAX_ACCESS_DBUFFER                              0          1
+RELAX_ALLOC                                       0         32
+RELAX_BUFFER_SIZE                                 0          1
+RELAX_CHECKED_RETURN                              0          1
+RELAX_DEREF_ARGS                                  0          1
+RELAX_FREED_ARGS                                  0          1
+RELAX_INDEX_GENERIC                               0          1
+RELAX_INDEX_STATIC                                0          1
+RELAX_MAYWRITE_NONPTR_FIELDS                      0          1
+RELAX_NEGATIVE_RETURN                             0          1
+RELAX_NEGATIVE_SINK                               0          1
+RELAX_NULL_RETURN                                 0         32
+RELAX_NOTHING                                     0          1
+DERIVE_PTR_ARITH                                  0          1
+DUMMY_DERIVER_PTR_ARITH                           0          1
+RELAX_PARAM_NAMES                                 0          1
+DUMMY_DERIVER_STACK_USE                           0          1
+RELAX_MAYWRITE                                    0          1
+RELAX_MAYWRITE_NONPTR_FIELDS_UNINIT               0          1
+RELAX_MAYWRITE_ALL_FIELDS                         0          1
+RELAX_READ                                        0          1
+RELAX_MAYREAD_NONPTR_FIELDS                       0          1
+RELAX_UNINIT_ALLOC                                0          1
+DUMMY_DERIVER_UNINIT                              0          1
+RELAX_UNCAUGHT_EXCEPT                             0          1
+DUMMY_DERIVER_EXCEPTIONS                          0          1
+CHECKED_RETURN_STAT                               0          1
+ADDR_ARG_STAT                                     0          1
+sequential initialization                        10          1
+Looking for translation units                     0          1
+Computing links for translation units             0          1
+xfer symbol cache                                 0          1
+Computing virtual overrides                       1          1
+Computing callgraph                               2          1
+Topologically sorting functions                   0          1
+Computing node costs                              1          1
+Analysis run                                     47          1
+loadFromEmit                                      9         62

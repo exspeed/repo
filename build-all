@@ -1,0 +1,6 @@
+#!/bin/sh
+
+cd src1
+make
+cd ../src2
+make

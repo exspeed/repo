@@ -1,0 +1,55 @@
+cmdline: command line: cov-analyze --dir dir 
+cmdline: parsed cmdline: [
+cmdline:   { name: "dir", args: [ "dir" ] },
+cmdline:   { name: "config", args: [ "/home/aheng/cov-analysis-linux64-8.6.0/config/coverity_config.xml" ] },
+cmdline: ]
+startup: am_pid=43945
+startup: detected platform: Linux 4.2.0-27-generic x86_64
+startup: target platform: linux64
+startup: Detected 4 logical cpus
+startup: Detected 4 cpu cores
+startup: host name: ubuntu
+startup: user name: aheng
+startup: Analysis version: 8.6.0 (b67e6073ca p-kent1-push-26368.885.194)
+startup: temp directory: /tmp/cov-aheng/1ad79ee99584a9ce6b594fe17ed83fd0
+startup: enable_constraint_fpp=0
+startup: current time: 2016-Sep-19 10:34:56
+startup: Detected amount of memory: 8158272kb
+startup: Limiting memory to 7342444kb
+wlink: Skipping web-app linking, no archives
+emitdb: callgraph.cpp:2680 11111111
+emitdb: callgraph.cpp:2703 11000011
+emitdb: callgraph.cpp:2723 11000011
+rta: Not running RTA because it doesn't apply to current languages
+emitdb: callgraph.cpp:2733 11000000
+dyncg: N/A or no data
+directives: Optimizing dataflow configuration
+general: Starting analysis
+dm-access-lib: AM listening for DM at 127.0.0.1:42671
+dm-access-lib: AM starting DM with command line: /home/aheng/cov-analysis-linux64-8.6.0/bin/cov-internal-dm --AM-port 42671 --log-file /home/aheng/Documents/cxx/dir/output/distributor.log -j 4 --AW-timeout 36000 /home/aheng/cov-analysis-linux64-8.6.0/bin/cov-analyze --worker --message-size-limit 104857600
+dm-access-lib: DM started: dm_pid=43947
+dm-access-lib: AM got connection from DM: (local) 127.0.0.1:42671 - 127.0.0.1:50240 (remote)
+summary: Analysis summary report:
+summary: ------------------------
+summary: Files analyzed                 : 2
+summary: Total LoC input to cov-analyze : 13354
+summary: Functions analyzed             : 31
+summary: Paths analyzed                 : 127
+summary: Time taken by analysis         : 00:00:00
+summary: Defect occurrences found       : 28 Total
+summary:                                   2 FORWARD_NULL
+summary:                                   2 NEGATIVE_RETURNS
+summary:                                   1 OVERRUN
+summary:                                  15 RESOURCE_LEAK
+summary:                                   2 REVERSE_INULL
+summary:                                   2 REVERSE_NEGATIVE
+summary:                                   2 SIZEOF_MISMATCH
+summary:                                   1 UNINIT
+summary:                                   1 USE_AFTER_FREE
+summary: Number of functions: 31
+summary: out_of_memory count: 0
+summary: paths_exceeded count: 0
+summary: recoverable failures: 0
+mem: AM peak mem bytes: 58253312
+assert: suppressed asserts: workers=0, master=0
+failures: recoverable failures: workers=0, master=0

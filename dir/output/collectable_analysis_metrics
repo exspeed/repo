@@ -1,0 +1,117 @@
+{
+  "cov-analyze" : {
+    "command-line-options" : {
+      args : [
+        "dir",
+        "config"
+      ]
+    },
+    time : 0,
+    "line-counts" : {
+      "C/C++" : {
+        "blank-lines" : 1808,
+        "code-lines" : 13354,
+        "comment-lines" : 2211
+      },
+      Java : {
+        "blank-lines" : 0,
+        "code-lines" : 0,
+        "comment-lines" : 0
+      },
+      "C#" : {
+        "blank-lines" : 0,
+        "code-lines" : 0,
+        "comment-lines" : 0
+      },
+      JavaScript : {
+        "blank-lines" : 0,
+        "code-lines" : 0,
+        "comment-lines" : 0
+      },
+      "Objective-C/C++" : {
+        "blank-lines" : 0,
+        "code-lines" : 0,
+        "comment-lines" : 0
+      },
+      PHP : {
+        "blank-lines" : 0,
+        "code-lines" : 0,
+        "comment-lines" : 0
+      },
+      Python : {
+        "blank-lines" : 0,
+        "code-lines" : 0,
+        "comment-lines" : 0
+      },
+      Ruby : {
+        "blank-lines" : 0,
+        "code-lines" : 0,
+        "comment-lines" : 0
+      }
+    },
+    "file-statistics-by-extension" : {
+      c : {
+        files : 2,
+        "total-bytes" : 4428
+      },
+      h : {
+        files : 38,
+        "total-bytes" : 878354
+      }
+    },
+    ident : "8.6.0 (build b67e6073ca p-kent1-push-26368.885.194)",
+    platform : "Linux 4.2.0-27-generic x86_64",
+    "short-platform" : "linux64",
+    extver : "8.6.0",
+    intver : "b67e6073ca p-kent1-push-26368.885.194",
+    "aw-peak-mem-bytes" : 0,
+    "am+aw-peak-mem-bytes" : 0,
+    "bytecode-functions" : 0,
+    concurrency : true,
+    cxx : true,
+    "enable-parse-warnings" : false,
+    failures : 0,
+    "files-analyzed" : 2,
+    force : false,
+    "function-metrics-count" : 31,
+    "functions-analyzed" : 31,
+    "incremental-hits" : 62,
+    "incremental-misses" : 0,
+    "dyncg-sites-resolved" : 0,
+    "dyncg-sites-total" : 0,
+    "max-mem" : 512,
+    "memout-count" : 0,
+    "pathout-count" : 0,
+    paths : 5000,
+    "paths-analyzed" : 127,
+    "peak-mem-bytes" : 58253312,
+    security : true,
+    "tus-count" : 2,
+    "web-app-archives" : 0,
+    "string-graph-nodes" : 0,
+    "web-app-entry-points" : 0,
+    "web-app-views-unused" : 0,
+    "ta.code_age_thresholds" : "0, 0",
+    "enabled-checkers" : "ARRAY_VS_SINGLETON ASSERT_SIDE_EFFECT BAD_ALLOC_ARITHMETIC BAD_ALLOC_STRLEN BAD_CHECK_OF_WAIT_COND BAD_COMPARE BAD_FREE BAD_LOCK_OBJECT BAD_OVERRIDE BAD_SIZEOF CALL_SUPER CHAR_IO CHECKED_RETURN COM.BAD_FREE COM.BSTR.CONV CONSTANT_EXPRESSION_RESULT COPY_PASTE_ERROR CTOR_DTOR_LEAK DEADCODE DELETE_ARRAY DELETE_VOID EVALUATION_ORDER EXPLICIT_THIS_EXPECTED FB.* FORWARD_NULL GUARDED_BY_VIOLATION IDENTICAL_BRANCHES IDENTIFIER_TYPO INFINITE_LOOP INVALIDATE_ITERATOR LOCK_EVASION LOCK_INVERSION MISSING_BREAK MISSING_RETURN NEGATIVE_RETURNS NESTING_INDENT_MISMATCH NON_STATIC_GUARDING_STATIC NO_EFFECT NULL_RETURNS OVERFLOW_BEFORE_WIDEN OVERRUN PASS_BY_VALUE READLINK RESOURCE_LEAK RETURN_LOCAL REVERSE_INULL REVERSE_NEGATIVE SIGN_EXTENSION SIZEOF_MISMATCH STRAY_SEMICOLON STREAM_FORMAT_STATE SWAPPED_ARGUMENTS UNCAUGHT_EXCEPT UNINIT UNINIT_CTOR UNINTENDED_GLOBAL UNINTENDED_INTEGER_DIVISION UNREACHABLE UNUSED_VALUE USE_AFTER_FREE VARARGS VOLATILE_ATOMICITY WRAPPER_ESCAPE",
+    "FORWARD_NULL-new-defect-count" : 2,
+    "NEGATIVE_RETURNS-new-defect-count" : 2,
+    "OVERRUN-new-defect-count" : 1,
+    "RESOURCE_LEAK-new-defect-count" : 15,
+    "REVERSE_INULL-new-defect-count" : 2,
+    "REVERSE_NEGATIVE-new-defect-count" : 2,
+    "SIZEOF_MISMATCH-new-defect-count" : 2,
+    "UNINIT-new-defect-count" : 1,
+    "USE_AFTER_FREE-new-defect-count" : 1,
+    "total-new-defect-count" : 28,
+    "total-input-files" : -1,
+    "matching-input-files" : -1
+  },
+  "cov-build" : {
+    "build-successes" : 0,
+    "builds-with-recoverable-errors" : 0,
+    "build-failures" : 0,
+    "cs-webapps-detected" : 0,
+    "cs-webapp-successes" : 0,
+    "cs-webapp-compilation-secs" : 0
+  }
+}

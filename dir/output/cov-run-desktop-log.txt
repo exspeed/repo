@@ -1,0 +1,145 @@
+startup: Coverity Desktop Analysis version 8.6.0 on Linux 4.2.0-27-generic x86_64
+startup: Internal version numbers: b67e6073ca p-kent1-push-26368.885.194
+startup: started at 2016-09-19 10:34:10
+startup: command line: cov-run-desktop --dir dir --host localhost --user admin --stream stream --tmpdir /tmp src1/test.c
+settings: {
+settings:   "type": "Coverity configuration",
+settings:   "format_version": 1,
+settings:   "settings": {
+settings:     "add_compiler_configurations": [
+settings:     ],
+settings:     "compiler_config_file": "/home/aheng/Documents/cxx/data-coverity/v8.6.0/config/coverity_config.xml",
+settings:     "compiler_configurations": [
+settings:       {
+settings:         "cov_configure_args": [
+settings:           "--gcc"
+settings:         ]
+settings:       },
+settings:       {
+settings:         "cov_configure_args": [
+settings:           "--java"
+settings:         ]
+settings:       },
+settings:       {
+settings:         "cov_configure_args": [
+settings:           "--msvc"
+settings:         ]
+settings:       },
+settings:       {
+settings:         "cov_configure_args": [
+settings:           "--cs"
+settings:         ]
+settings:       },
+settings:       {
+settings:         "cov_configure_args": [
+settings:           "--clang"
+settings:         ]
+settings:       }
+settings:     ],
+settings:     "cov_run_desktop": {
+settings:       "build_record_with_source": false,
+settings:       "ext1": {
+settings:       },
+settings:       "reference_snapshot": "idir-date"
+settings:     },
+settings:     "intermediate_dir": "/home/aheng/Documents/cxx/dir",
+settings:     "known_installations": [
+settings:       {
+settings:         "directory": "/home/aheng/cov-analysis-linux64-8.6.0",
+settings:         "kind": "cov-analysis",
+settings:         "platform": "linux64",
+settings:         "version": "8.6.0"
+settings:       }
+settings:     ],
+settings:     "license_file_dir": "/home/aheng/Documents/cxx/data-coverity/v8.6.0/lic",
+settings:     "scm": {
+settings:     },
+settings:     "server": {
+settings:       "auth_key_file": "/home/aheng/.coverity/authkeys/ak-localhost-8080",
+settings:       "authenticate_ssl": false,
+settings:       "ext2": {
+settings:       },
+settings:       "host": "localhost",
+settings:       "ldap_server": "",
+settings:       "password": "******",
+settings:       "port": 8080,
+settings:       "ssl": false,
+settings:       "username": "admin"
+settings:     },
+settings:     "stream": "stream",
+settings:     "tmpdir": "/tmp"
+settings:   }
+settings: }
+ref-snapshot: running: /home/aheng/cov-analysis-linux64-8.6.0/bin/cov-manage-history --dir dir --tmpdir /tmp --no-banner snapshot-id-for-date --host localhost --user admin --stream stream --port 8080 --max-retries=0 --response-timeout=36000 -of /home/aheng/Documents/cxx/dir/output/snapshot-id.json --date 2016-09-19T10:32:31-07:00
+ref-snapshot: [STATUS] Retrieving snapshot ID with summaries for date 2016-09-19T10:32:31-07:00...
+ref-snapshot: /home/aheng/cov-analysis-linux64-8.6.0/bin/cov-manage-history took 0.0 seconds.
+tu-selection: Selected TU 1 with primary source file /home/aheng/Documents/cxx/src1/test.c
+emit: running: /home/aheng/cov-analysis-linux64-8.6.0/bin/cov-manage-emit --dir dir --tmpdir /tmp --no-banner --tu 1 recompile --desktop --name desktopBuilddac32ca29681355bf059ff2ef37b878a0 -j auto
+emit: Replaying 1 compilations with 4 processes (auto-detected).
+emit: CWD=/home/aheng/Documents/cxx/src1
+emit: /home/aheng/cov-analysis-linux64-8.6.0/bin/cov-emit --dir /home/aheng/Documents/cxx/dir --ignore_path=/tmp/cov-aheng/c979e02148c24f958f2522515ce18aeb/cov-configure --ignore_path=/tmp/cov-aheng/c979e02148c24f958f2522515ce18aeb/cov-aheng/4df749d76a8dd0122cbac2f129887893 -w --no_stdarg_builtin --incompat_proto --add_type_modifier=__coverity___fpreg --add_type_modifier=__coverity___float80 --add_type_modifier=__coverity___float128 --add_type_modifier=__coverity_decimal --no_predefined_cplusplus --no_predefined_feature_test_macros --gnu_version=40804 --no_predefines --char_bit_size=8 --gnu_carriage_return_line_terminator --no_multiline_string --no_trigraphs --ignore_calling_convention --allow__bool --macro_stack_pragmas --pre_preinclude /home/aheng/Documents/cxx/dir/emit/ubuntu/config/80f471e971c31d04c66b09d32b1cee81/gcc-config-0/coverity-macro-compat.h --pre_preinclude /home/aheng/Documents/cxx/dir/emit/ubuntu/config/80f471e971c31d04c66b09d32b1cee81/gcc-config-0/coverity-compiler-compat.h --preinclude /home/aheng/cov-analysis-linux64-8.6.0/config/template-gcc-config-0/../user_nodefs.h --gcc --sys_include /usr/lib/gcc/x86_64-linux-gnu/4.8/include --sys_include /usr/local/include --sys_include /usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed --sys_include /usr/include/x86_64-linux-gnu --sys_include /usr/include -D__NO_INLINE__ --type_sizes=e16Pdlx8fi4s2 --type_alignments=e16Pdlx8fi4s2 --size_t_type=m --wchar_t_type=i --ptrdiff_t_type=l test.c 
+emit: Already emitted primary source file '/home/aheng/Documents/cxx/src1/test.c'
+emit: Compilation successful
+emit: Compiled 1 files successfully.
+emit: /home/aheng/cov-analysis-linux64-8.6.0/bin/cov-manage-emit took 0.0 seconds.
+emit: running: /home/aheng/cov-analysis-linux64-8.6.0/bin/cov-manage-emit --dir dir --tmpdir /tmp --no-banner --tu 1 -tp build_name("^desktopBuilddac32ca29681355bf059ff2ef37b878a0$") print-tuid -of /tmp/cov-aheng/dac32ca29681355bf059ff2ef37b878a/tuids
+emit: /home/aheng/cov-analysis-linux64-8.6.0/bin/cov-manage-emit took 0.0 seconds.
+emit: TU IDs after recompile: 1
+summaries: running: /home/aheng/cov-analysis-linux64-8.6.0/bin/cov-manage-history --dir dir --tmpdir /tmp --no-banner download-analysis-summaries --host localhost --user admin --stream stream --port 8080 --max-retries=0 --response-timeout=36000 --reference-snapshot-id 10001 --tu 1 --desktop-hashes-file /home/aheng/Documents/cxx/dir/output/desktop-hashes --progress-file-v1 /tmp/cov-aheng/dac32ca29681355bf059ff2ef37b878a/summaries-download-progress --code-identity-file /home/aheng/Documents/cxx/dir/emit/desktop-cache/downloaded-codebase-index.cbi
+summaries: [STATUS] Connecting: Downloading summaries index for snapshot 10001...
+summaries: [STATUS] Downloading summaries index for snapshot 10001...
+summaries: [STATUS] Connecting: Downloading summaries batches...
+summaries: [STATUS] Downloading summaries batches...
+summaries: /home/aheng/cov-analysis-linux64-8.6.0/bin/cov-manage-history took 0.1 seconds.
+analysis: running: /home/aheng/cov-analysis-linux64-8.6.0/bin/cov-analyze --dir dir --tmpdir /tmp --no-banner --analysis-settings /home/aheng/Documents/cxx/dir/emit/desktop-cache/analysis-settings.json --security-file /home/aheng/cov-analysis-linux64-8.6.0/bin/license.dat --persistent-models true --use-desktop-hashes /home/aheng/Documents/cxx/dir/output/desktop-hashes --no-whole-program-checkers --fb-exclude desktop --export-summaries false --noxrefs --strip-path /home/aheng/Documents/cxx --ticker-mode=none --tu 1 -en PARSE_ERROR --force-report-rws
+analysis: Using 4 workers as limited by CPU(s)
+analysis: [STATUS] Computing links for 1 translation unit
+analysis: [STATUS] Computing virtual overrides
+analysis: [STATUS] Computing callgraph
+analysis: [STATUS] Topologically sorting 15 functions
+analysis: [STATUS] Computing node costs
+analysis: [STATUS] Running analysis
+analysis: [STATUS] Running analysis (types/warnings pass)
+analysis: Analysis summary report:
+analysis: ------------------------
+analysis: Files analyzed                 : 1
+analysis: Total LoC input to cov-analyze : 13239
+analysis: Functions analyzed             : 15
+analysis: Paths analyzed                 : 61
+analysis: Time taken by analysis         : 00:00:00
+analysis: Defect occurrences found       : 15 Total
+analysis:                                   1 FORWARD_NULL
+analysis:                                   1 NEGATIVE_RETURNS
+analysis:                                   1 OVERRUN
+analysis:                                   7 RESOURCE_LEAK
+analysis:                                   1 REVERSE_INULL
+analysis:                                   1 REVERSE_NEGATIVE
+analysis:                                   1 SIZEOF_MISMATCH
+analysis:                                   1 UNINIT
+analysis:                                   1 USE_AFTER_FREE
+analysis: 
+analysis: /home/aheng/cov-analysis-linux64-8.6.0/bin/cov-analyze took 0.5 seconds.
+format: running: /home/aheng/cov-analysis-linux64-8.6.0/bin/cov-format-errors --dir dir --tmpdir /tmp --no-banner --strip-path /home/aheng/Documents/cxx --json-output-v5 /home/aheng/Documents/cxx/dir/output/errors.json --security-file /home/aheng/cov-analysis-linux64-8.6.0/bin/license.dat --lang en
+format: /home/aheng/cov-analysis-linux64-8.6.0/bin/cov-format-errors took 0.0 seconds.
+triage: running: /home/aheng/cov-analysis-linux64-8.6.0/bin/cov-commit-defects --dir dir --tmpdir /tmp --no-banner --ticker-mode=none --preview-report-v2 /home/aheng/Documents/cxx/dir/output/preview-report.json --cid-assignment-timeout 30 --comparison-snapshot-id 10001 --security-file /home/aheng/cov-analysis-linux64-8.6.0/bin/license.dat --host localhost --user admin --stream stream --port 8080
+triage: Getting data port from http://localhost:8080
+triage: Connecting to server localhost:9090
+triage: Upgrading encryption to "required" because we have a certificate 
+triage: from a past session for this server.
+triage: Connection is encrypted.
+triage: [STATUS] 2016-09-19 17:34:11 UTC - Committing 9 defect files...
+triage: Elapsed time: 00:00:00
+triage: /home/aheng/cov-analysis-linux64-8.6.0/bin/cov-commit-defects took 0.3 seconds.
+set_new_defect_owner: running: /home/aheng/cov-analysis-linux64-8.6.0/bin/cov-manage-im --host localhost --user admin --stream stream --port 8080 --mode defects --update --cid=10015,10013,10017,10014,10012,10021,10018,10011,10008,10009,10019,10010,10020 --set=owner:admin
+set_new_defect_owner: Update succeeded for 13 defects.
+set_new_defect_owner: /home/aheng/cov-analysis-linux64-8.6.0/bin/cov-manage-im took 2.2 seconds.
+triage: running: /home/aheng/cov-analysis-linux64-8.6.0/bin/cov-commit-defects --dir dir --tmpdir /tmp --no-banner --ticker-mode=none --preview-report-v2 /home/aheng/Documents/cxx/dir/output/preview-report.json --cid-assignment-timeout 30 --comparison-snapshot-id 10001 --security-file /home/aheng/cov-analysis-linux64-8.6.0/bin/license.dat --host localhost --user admin --stream stream --port 8080
+triage: Getting data port from http://localhost:8080
+triage: Connecting to server localhost:9090
+triage: Upgrading encryption to "required" because we have a certificate 
+triage: from a past session for this server.
+triage: Connection is encrypted.
+triage: [STATUS] 2016-09-19 17:34:14 UTC - Committing 9 defect files...
+triage: Elapsed time: 00:00:00
+triage: /home/aheng/cov-analysis-linux64-8.6.0/bin/cov-commit-defects took 0.3 seconds.
+shutdown: cov-run-desktop terminating with code 0 at 2016-09-19 10:34:14

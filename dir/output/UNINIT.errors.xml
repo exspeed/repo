@@ -1,0 +1,32 @@
+<error>
+<domain>STATIC_C</domain>
+<lang>C</lang>
+<checker>UNINIT</checker>
+<file>/home/aheng/Documents/cxx/src1/test.c</file>
+<function>uninit</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>var_decl</tag>
+<description>{CovLStrv2{{t{Declaring variable {0} without initializer.}{{code{p}}}}}}</description>
+<line>91</line>
+</event>
+<event>
+<main>true</main>
+<tag>uninit_use</tag>
+<description>{CovLStrv2{{t{Using uninitialized value {0}.}{{code{p}}}}}}</description>
+<line>92</line>
+</event>
+<extra>p</extra>
+<subcategory>pointer_deref_write</subcategory>
+<typePropertiesGroup>
+<category>Memory - corruptions</category>
+<impact>High</impact>
+<type>Uninitialized pointer write</type>
+<cwe>457</cwe>
+<localEffect>This could cause an immediate crash or incorrect values might be read subsequently resulting in incorrect computations.</localEffect>
+<longDescription>Write to target of an uninitialized pointer</longDescription>
+<qualityKind>true</qualityKind>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>

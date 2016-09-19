@@ -1,0 +1,68 @@
+<error>
+<domain>STATIC_C</domain>
+<lang>C</lang>
+<checker>OVERRUN</checker>
+<file>/home/aheng/Documents/cxx/src1/test.c</file>
+<function>overrun_static</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch.}{{code{i &lt;= 10}}}}}}</description>
+<line>120</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>loop</tag>
+<description>{CovLStrv2{{t{Jumping back to the beginning of the loop.}}}}</description>
+<line>121</line>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop_begin</tag>
+<description>{CovLStrv2{{t{Jumped back to beginning of loop.}}}}</description>
+<line>120</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch.}{{code{i &lt;= 10}}}}}}</description>
+<line>120</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_at_most</tag>
+<description>{CovLStrv2{{t{Checking {0} implies that {1} may be up to {2} on the true branch.}{{code{i &lt;= 10}}}{{code{i}}}{10}}}}</description>
+<line>120</line>
+</event>
+<event>
+<main>true</main>
+<tag>overrun-local</tag>
+<description>{CovLStrv2{{t{Overrunning array {0} of {1} bytes at byte offset {2} using index {3} (which evaluates to {4}).}{{code{buf}}}{10}{10}{{code{i}}}{10}}}}</description>
+<line>121</line>
+</event>
+<extra>buf</extra>
+<subcategory>write</subcategory>
+<antecedentMerge>
+<domain>STATIC_C</domain>
+<checker>OVERRUN_STATIC</checker>
+<file>/home/aheng/Documents/cxx/src1/test.c</file>
+<function>overrun_static</function>
+<extra></extra>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Memory - corruptions</category>
+<impact>High</impact>
+<type>Out-of-bounds write</type>
+<cwe>119</cwe>
+<localEffect>This could cause an immediate crash or incorrect computations.</localEffect>
+<longDescription>Out-of-bounds write to a buffer</longDescription>
+<qualityKind>true</qualityKind>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>

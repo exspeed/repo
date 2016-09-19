@@ -1,0 +1,62 @@
+<error>
+<domain>STATIC_C</domain>
+<lang>C</lang>
+<checker>REVERSE_NEGATIVE</checker>
+<file>/home/aheng/Documents/cxx/src2/test.c</file>
+<function>reverse_negative</function>
+<score>100</score>
+<ordered>false</ordered>
+<event>
+<tag>negative_sink</tag>
+<description>{CovLStrv2{{t{Using {0} as index to array {1}.}{{code{j}}}{{code{buf}}}}}}</description>
+<line>88</line>
+</event>
+<event>
+<main>true</main>
+<tag>check_after_sink</tag>
+<description>{CovLStrv2{{t{You might be using variable {0} before verifying that it is &gt;= 0.}{{code{j}}}}}}</description>
+<line>89</line>
+</event>
+<extra></extra>
+<subcategory>array_index_read</subcategory>
+<typePropertiesGroup>
+<category>Memory - illegal accesses</category>
+<impact>High</impact>
+<type>Negative array index read</type>
+<cwe>129</cwe>
+<localEffect>A memory location at a negative offset from the beginning of the array will be read, resulting in incorrect values.</localEffect>
+<longDescription>Read from array at negative index</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<lang>C</lang>
+<checker>REVERSE_NEGATIVE</checker>
+<file>/home/aheng/Documents/cxx/src1/test.c</file>
+<function>reverse_negative</function>
+<score>100</score>
+<ordered>false</ordered>
+<event>
+<tag>negative_sink</tag>
+<description>{CovLStrv2{{t{Using {0} as index to array {1}.}{{code{j}}}{{code{buf}}}}}}</description>
+<line>84</line>
+</event>
+<event>
+<main>true</main>
+<tag>check_after_sink</tag>
+<description>{CovLStrv2{{t{You might be using variable {0} before verifying that it is &gt;= 0.}{{code{j}}}}}}</description>
+<line>85</line>
+</event>
+<extra></extra>
+<subcategory>array_index_read</subcategory>
+<typePropertiesGroup>
+<category>Memory - illegal accesses</category>
+<impact>High</impact>
+<type>Negative array index read</type>
+<cwe>129</cwe>
+<localEffect>A memory location at a negative offset from the beginning of the array will be read, resulting in incorrect values.</localEffect>
+<longDescription>Read from array at negative index</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>

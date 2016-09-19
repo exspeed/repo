@@ -1,0 +1,64 @@
+<error>
+<domain>STATIC_C</domain>
+<lang>C</lang>
+<checker>SIZEOF_MISMATCH</checker>
+<file>/home/aheng/Documents/cxx/src2/test.c</file>
+<function>size_check</function>
+<score>100</score>
+<ordered>false</ordered>
+<event>
+<main>true</main>
+<tag>suspicious_sizeof</tag>
+<description>{CovLStrv2{{t{Passing argument {0} to function {1} and then casting the return value to {2} is suspicious.}{{code{8UL /* sizeof (struct bigger_than_ptr *) */}}}{{code{malloc}}}{{code{struct bigger_than_ptr *}}}}}}</description>
+<line>56</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{{t{Did you intend to use {0} instead of {1}?}{{code{sizeof (struct bigger_than_ptr)}}}{{code{sizeof (struct bigger_than_ptr *)}}}}}}</description>
+<line>56</line>
+</event>
+<extra>malloc</extra>
+<subcategory>wrong_sizeof</subcategory>
+<typePropertiesGroup>
+<category>Incorrect expression</category>
+<impact>Medium</impact>
+<type>Wrong sizeof argument</type>
+<cwe>569</cwe>
+<localEffect>The wrong sizeof value is used in an expression or as argument to a function. The result is an incorrect value that may cause unexpected program behaviors.</localEffect>
+<longDescription>The sizeof operator is invoked on the wrong argument</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<lang>C</lang>
+<checker>SIZEOF_MISMATCH</checker>
+<file>/home/aheng/Documents/cxx/src1/test.c</file>
+<function>size_check</function>
+<score>100</score>
+<ordered>false</ordered>
+<event>
+<main>true</main>
+<tag>suspicious_sizeof</tag>
+<description>{CovLStrv2{{t{Passing argument {0} to function {1} and then casting the return value to {2} is suspicious.}{{code{8UL /* sizeof (struct bigger_than_ptr *) */}}}{{code{malloc}}}{{code{struct bigger_than_ptr *}}}}}}</description>
+<line>55</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{{t{Did you intend to use {0} instead of {1}?}{{code{sizeof (struct bigger_than_ptr)}}}{{code{sizeof (struct bigger_than_ptr *)}}}}}}</description>
+<line>55</line>
+</event>
+<extra>malloc</extra>
+<subcategory>wrong_sizeof</subcategory>
+<typePropertiesGroup>
+<category>Incorrect expression</category>
+<impact>Medium</impact>
+<type>Wrong sizeof argument</type>
+<cwe>569</cwe>
+<localEffect>The wrong sizeof value is used in an expression or as argument to a function. The result is an incorrect value that may cause unexpected program behaviors.</localEffect>
+<longDescription>The sizeof operator is invoked on the wrong argument</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>

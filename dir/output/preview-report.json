@@ -1,0 +1,588 @@
+{
+  "header" : {
+    "format" : "commit preview report",
+    "version" : 2
+  },
+  "analysisInfo" : {
+    "ownerAssignmentRule" : "default_component_owner",
+    "comparisonSnapshotId" : null,
+    "reportTimestamp" : "2016-09-19T17:34:58.485Z",
+    "user" : "admin",
+    "command" : "cov-analyze --dir dir"
+  },
+  "issueInfo" : [ {
+    "cid" : 10008,
+    "mergeKey" : "761d339ec1f7959ef68bb0f0c3f9729f",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2016-09-19T17:33:47.559Z",
+    "occurrences" : [ {
+      "checker" : "FORWARD_NULL",
+      "file" : "/src2/test.c",
+      "function" : "forward_null",
+      "extra" : "p",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "deref_constant_null",
+      "mainEventLineNumber" : 20,
+      "mainEventDescription" : "Dereferencing null pointer \"p\".",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    }, {
+      "checker" : "FORWARD_NULL",
+      "file" : "/src1/test.c",
+      "function" : "forward_null",
+      "extra" : "p",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "deref_constant_null",
+      "mainEventLineNumber" : 19,
+      "mainEventDescription" : "Dereferencing null pointer \"p\".",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : "admin",
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : { },
+    "ownerLdapServerName" : "local"
+  }, {
+    "cid" : 10009,
+    "mergeKey" : "892baaf3d494e0637ad2bcf5b03e08fa",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2016-09-19T17:33:47.559Z",
+    "occurrences" : [ {
+      "checker" : "NEGATIVE_RETURNS",
+      "file" : "/src2/test.c",
+      "function" : "negative_returns",
+      "extra" : "read",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "array_index_write",
+      "mainEventLineNumber" : 81,
+      "mainEventDescription" : "Using variable \"j\" as an index to array \"buf\".",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    }, {
+      "checker" : "NEGATIVE_RETURNS",
+      "file" : "/src1/test.c",
+      "function" : "negative_returns",
+      "extra" : "read",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "array_index_write",
+      "mainEventLineNumber" : 77,
+      "mainEventDescription" : "Using variable \"j\" as an index to array \"buf\".",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : "admin",
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : { },
+    "ownerLdapServerName" : "local"
+  }, {
+    "cid" : 10010,
+    "mergeKey" : "c2aa12387b35decd2b8b4b770b91b875",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2016-09-19T17:33:47.559Z",
+    "occurrences" : [ {
+      "checker" : "OVERRUN",
+      "file" : "/src1/test.c",
+      "function" : "overrun_static",
+      "extra" : "buf",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "write",
+      "mainEventLineNumber" : 121,
+      "mainEventDescription" : "Overrunning array \"buf\" of 10 bytes at byte offset 10 using index \"i\" (which evaluates to 10).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : "admin",
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : { },
+    "ownerLdapServerName" : "local"
+  }, {
+    "cid" : 10011,
+    "mergeKey" : "6ef6cf3e3cace2552151ccb07d2f9958",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2016-09-19T17:33:47.559Z",
+    "occurrences" : [ {
+      "checker" : "RESOURCE_LEAK",
+      "file" : "/src1/test.c",
+      "function" : "paths",
+      "extra" : "p",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 140,
+      "mainEventDescription" : "Variable \"p\" going out of scope leaks the storage it points to.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    }, {
+      "checker" : "RESOURCE_LEAK",
+      "file" : "/src2/test.c",
+      "function" : "paths",
+      "extra" : "p",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 144,
+      "mainEventDescription" : "Variable \"p\" going out of scope leaks the storage it points to.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : "admin",
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : { },
+    "ownerLdapServerName" : "local"
+  }, {
+    "cid" : 10016,
+    "mergeKey" : "2dd112556487a38b24b9b53f5db87008",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2016-09-19T17:33:47.559Z",
+    "occurrences" : [ {
+      "checker" : "RESOURCE_LEAK",
+      "file" : "/src2/test.c",
+      "function" : "uninit",
+      "extra" : "p",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 97,
+      "mainEventDescription" : "Variable \"p\" going out of scope leaks the storage it points to.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : { },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10012,
+    "mergeKey" : "4922488acedf9724d568d0e7691a61a9",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2016-09-19T17:33:47.559Z",
+    "occurrences" : [ {
+      "checker" : "RESOURCE_LEAK",
+      "file" : "/src2/test.c",
+      "function" : "size_check",
+      "extra" : "p",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 57,
+      "mainEventDescription" : "Variable \"p\" going out of scope leaks the storage it points to.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    }, {
+      "checker" : "RESOURCE_LEAK",
+      "file" : "/src1/test.c",
+      "function" : "size_check",
+      "extra" : "p",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 56,
+      "mainEventDescription" : "Variable \"p\" going out of scope leaks the storage it points to.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : "admin",
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : { },
+    "ownerLdapServerName" : "local"
+  }, {
+    "cid" : 10013,
+    "mergeKey" : "194dd252d8f88c47a40d0ec8dddc1cad",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2016-09-19T17:33:47.559Z",
+    "occurrences" : [ {
+      "checker" : "RESOURCE_LEAK",
+      "file" : "/src2/test.c",
+      "function" : "resource_leak_2",
+      "extra" : "p",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 41,
+      "mainEventDescription" : "Variable \"p\" going out of scope leaks the storage it points to.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    }, {
+      "checker" : "RESOURCE_LEAK",
+      "file" : "/src2/test.c",
+      "function" : "resource_leak_2",
+      "extra" : "p",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 42,
+      "mainEventDescription" : "Variable \"p\" going out of scope leaks the storage it points to.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    }, {
+      "checker" : "RESOURCE_LEAK",
+      "file" : "/src1/test.c",
+      "function" : "resource_leak_2",
+      "extra" : "p",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 40,
+      "mainEventDescription" : "Variable \"p\" going out of scope leaks the storage it points to.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    }, {
+      "checker" : "RESOURCE_LEAK",
+      "file" : "/src1/test.c",
+      "function" : "resource_leak_2",
+      "extra" : "p",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 41,
+      "mainEventDescription" : "Variable \"p\" going out of scope leaks the storage it points to.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : "admin",
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : { },
+    "ownerLdapServerName" : "local"
+  }, {
+    "cid" : 10014,
+    "mergeKey" : "45b5715d701063193fb10680d810ff25",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2016-09-19T17:33:47.559Z",
+    "occurrences" : [ {
+      "checker" : "RESOURCE_LEAK",
+      "file" : "/src2/test.c",
+      "function" : "resource_leak_2",
+      "extra" : "q",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 41,
+      "mainEventDescription" : "Variable \"q\" going out of scope leaks the storage it points to.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    }, {
+      "checker" : "RESOURCE_LEAK",
+      "file" : "/src2/test.c",
+      "function" : "resource_leak_2",
+      "extra" : "q",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 42,
+      "mainEventDescription" : "Variable \"q\" going out of scope leaks the storage it points to.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    }, {
+      "checker" : "RESOURCE_LEAK",
+      "file" : "/src1/test.c",
+      "function" : "resource_leak_2",
+      "extra" : "q",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 40,
+      "mainEventDescription" : "Variable \"q\" going out of scope leaks the storage it points to.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    }, {
+      "checker" : "RESOURCE_LEAK",
+      "file" : "/src1/test.c",
+      "function" : "resource_leak_2",
+      "extra" : "q",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 41,
+      "mainEventDescription" : "Variable \"q\" going out of scope leaks the storage it points to.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : "admin",
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : { },
+    "ownerLdapServerName" : "local"
+  }, {
+    "cid" : 10015,
+    "mergeKey" : "11c3cb9fa935bbe4f9737d3368854706",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2016-09-19T17:33:47.559Z",
+    "occurrences" : [ {
+      "checker" : "RESOURCE_LEAK",
+      "file" : "/src2/test.c",
+      "function" : "resource_leak",
+      "extra" : "p",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 34,
+      "mainEventDescription" : "Variable \"p\" going out of scope leaks the storage it points to.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    }, {
+      "checker" : "RESOURCE_LEAK",
+      "file" : "/src1/test.c",
+      "function" : "resource_leak",
+      "extra" : "p",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 33,
+      "mainEventDescription" : "Variable \"p\" going out of scope leaks the storage it points to.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : "admin",
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : { },
+    "ownerLdapServerName" : "local"
+  }, {
+    "cid" : 10017,
+    "mergeKey" : "2210bffae20b073ebfcb7a6308527fb3",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2016-09-19T17:33:47.559Z",
+    "occurrences" : [ {
+      "checker" : "REVERSE_INULL",
+      "file" : "/src2/test.c",
+      "function" : "reverse_null",
+      "extra" : "input",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 26,
+      "mainEventDescription" : "Null-checking \"input\" suggests that it may be null, but it has already been dereferenced on all paths leading to the check.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    }, {
+      "checker" : "REVERSE_INULL",
+      "file" : "/src1/test.c",
+      "function" : "reverse_null",
+      "extra" : "input",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 25,
+      "mainEventDescription" : "Null-checking \"input\" suggests that it may be null, but it has already been dereferenced on all paths leading to the check.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : "admin",
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : { },
+    "ownerLdapServerName" : "local"
+  }, {
+    "cid" : 10018,
+    "mergeKey" : "5dc5dfb28002da6e97e4d9a6122d7142",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2016-09-19T17:33:47.559Z",
+    "occurrences" : [ {
+      "checker" : "REVERSE_NEGATIVE",
+      "file" : "/src2/test.c",
+      "function" : "reverse_negative",
+      "extra" : "",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "array_index_read",
+      "mainEventLineNumber" : 89,
+      "mainEventDescription" : "You might be using variable \"j\" before verifying that it is >= 0.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    }, {
+      "checker" : "REVERSE_NEGATIVE",
+      "file" : "/src1/test.c",
+      "function" : "reverse_negative",
+      "extra" : "",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "array_index_read",
+      "mainEventLineNumber" : 85,
+      "mainEventDescription" : "You might be using variable \"j\" before verifying that it is >= 0.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : "admin",
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : { },
+    "ownerLdapServerName" : "local"
+  }, {
+    "cid" : 10019,
+    "mergeKey" : "9e98f8afc3f3fe176a7ce62a1e88dc2d",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2016-09-19T17:33:47.559Z",
+    "occurrences" : [ {
+      "checker" : "SIZEOF_MISMATCH",
+      "file" : "/src2/test.c",
+      "function" : "size_check",
+      "extra" : "malloc",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "wrong_sizeof",
+      "mainEventLineNumber" : 56,
+      "mainEventDescription" : "Passing argument \"8UL /* sizeof (struct bigger_than_ptr *) */\" to function \"malloc\" and then casting the return value to \"struct bigger_than_ptr *\" is suspicious.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    }, {
+      "checker" : "SIZEOF_MISMATCH",
+      "file" : "/src1/test.c",
+      "function" : "size_check",
+      "extra" : "malloc",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "wrong_sizeof",
+      "mainEventLineNumber" : 55,
+      "mainEventDescription" : "Passing argument \"8UL /* sizeof (struct bigger_than_ptr *) */\" to function \"malloc\" and then casting the return value to \"struct bigger_than_ptr *\" is suspicious.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : "admin",
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : { },
+    "ownerLdapServerName" : "local"
+  }, {
+    "cid" : 10020,
+    "mergeKey" : "dee177b92d02d935b537f5b0c8b96572",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2016-09-19T17:33:47.559Z",
+    "occurrences" : [ {
+      "checker" : "UNINIT",
+      "file" : "/src1/test.c",
+      "function" : "uninit",
+      "extra" : "p",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pointer_deref_write",
+      "mainEventLineNumber" : 92,
+      "mainEventDescription" : "Using uninitialized value \"p\".",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : "admin",
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : { },
+    "ownerLdapServerName" : "local"
+  }, {
+    "cid" : 10021,
+    "mergeKey" : "5340f78ce0e2ea5fd199c0b142ee6fdb",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2016-09-19T17:33:47.559Z",
+    "occurrences" : [ {
+      "checker" : "USE_AFTER_FREE",
+      "file" : "/src1/test.c",
+      "function" : "use_after_free",
+      "extra" : "p",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "deref_write_after_free",
+      "mainEventLineNumber" : 47,
+      "mainEventDescription" : "Dereferencing freed pointer \"p\".",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : "admin",
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : { },
+    "ownerLdapServerName" : "local"
+  } ]
+}

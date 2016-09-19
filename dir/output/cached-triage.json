@@ -1,0 +1,291 @@
+{
+  "format" : "cached triage",
+  "issues" : [
+    {
+      "mergeKey" : "11c3cb9fa935bbe4f9737d3368854706",
+      "cid" : 10015,
+      "stream" : "stream",
+      "triage" : {
+        "action" : "Undecided",
+        "classification" : "Unclassified",
+        "externalReference" : "",
+        "fixTarget" : "Untargeted",
+        "legacy" : "False",
+        "owner" : "admin",
+        "severity" : "Unspecified"
+      },
+      "customTriage" : {},
+      "presentInReferenceSnapshot" : false,
+      "firstDetectedDateTime" : "2016-09-19T10:33:47-07:00",
+      "components" : [
+        "Other"
+      ],
+      "retrievalDateTime" : "2016-09-19T10:34:14-07:00",
+      "ownerLdapServerName" : "local"
+    },
+    {
+      "mergeKey" : "194dd252d8f88c47a40d0ec8dddc1cad",
+      "cid" : 10013,
+      "stream" : "stream",
+      "triage" : {
+        "action" : "Undecided",
+        "classification" : "Unclassified",
+        "externalReference" : "",
+        "fixTarget" : "Untargeted",
+        "legacy" : "False",
+        "owner" : "admin",
+        "severity" : "Unspecified"
+      },
+      "customTriage" : {},
+      "presentInReferenceSnapshot" : false,
+      "firstDetectedDateTime" : "2016-09-19T10:33:47-07:00",
+      "components" : [
+        "Other"
+      ],
+      "retrievalDateTime" : "2016-09-19T10:34:14-07:00",
+      "ownerLdapServerName" : "local"
+    },
+    {
+      "mergeKey" : "2210bffae20b073ebfcb7a6308527fb3",
+      "cid" : 10017,
+      "stream" : "stream",
+      "triage" : {
+        "action" : "Undecided",
+        "classification" : "Unclassified",
+        "externalReference" : "",
+        "fixTarget" : "Untargeted",
+        "legacy" : "False",
+        "owner" : "admin",
+        "severity" : "Unspecified"
+      },
+      "customTriage" : {},
+      "presentInReferenceSnapshot" : false,
+      "firstDetectedDateTime" : "2016-09-19T10:33:47-07:00",
+      "components" : [
+        "Other"
+      ],
+      "retrievalDateTime" : "2016-09-19T10:34:14-07:00",
+      "ownerLdapServerName" : "local"
+    },
+    {
+      "mergeKey" : "45b5715d701063193fb10680d810ff25",
+      "cid" : 10014,
+      "stream" : "stream",
+      "triage" : {
+        "action" : "Undecided",
+        "classification" : "Unclassified",
+        "externalReference" : "",
+        "fixTarget" : "Untargeted",
+        "legacy" : "False",
+        "owner" : "admin",
+        "severity" : "Unspecified"
+      },
+      "customTriage" : {},
+      "presentInReferenceSnapshot" : false,
+      "firstDetectedDateTime" : "2016-09-19T10:33:47-07:00",
+      "components" : [
+        "Other"
+      ],
+      "retrievalDateTime" : "2016-09-19T10:34:14-07:00",
+      "ownerLdapServerName" : "local"
+    },
+    {
+      "mergeKey" : "4922488acedf9724d568d0e7691a61a9",
+      "cid" : 10012,
+      "stream" : "stream",
+      "triage" : {
+        "action" : "Undecided",
+        "classification" : "Unclassified",
+        "externalReference" : "",
+        "fixTarget" : "Untargeted",
+        "legacy" : "False",
+        "owner" : "admin",
+        "severity" : "Unspecified"
+      },
+      "customTriage" : {},
+      "presentInReferenceSnapshot" : false,
+      "firstDetectedDateTime" : "2016-09-19T10:33:47-07:00",
+      "components" : [
+        "Other"
+      ],
+      "retrievalDateTime" : "2016-09-19T10:34:14-07:00",
+      "ownerLdapServerName" : "local"
+    },
+    {
+      "mergeKey" : "5340f78ce0e2ea5fd199c0b142ee6fdb",
+      "cid" : 10021,
+      "stream" : "stream",
+      "triage" : {
+        "action" : "Undecided",
+        "classification" : "Unclassified",
+        "externalReference" : "",
+        "fixTarget" : "Untargeted",
+        "legacy" : "False",
+        "owner" : "admin",
+        "severity" : "Unspecified"
+      },
+      "customTriage" : {},
+      "presentInReferenceSnapshot" : false,
+      "firstDetectedDateTime" : "2016-09-19T10:33:47-07:00",
+      "components" : [
+        "Other"
+      ],
+      "retrievalDateTime" : "2016-09-19T10:34:14-07:00",
+      "ownerLdapServerName" : "local"
+    },
+    {
+      "mergeKey" : "5dc5dfb28002da6e97e4d9a6122d7142",
+      "cid" : 10018,
+      "stream" : "stream",
+      "triage" : {
+        "action" : "Undecided",
+        "classification" : "Unclassified",
+        "externalReference" : "",
+        "fixTarget" : "Untargeted",
+        "legacy" : "False",
+        "owner" : "admin",
+        "severity" : "Unspecified"
+      },
+      "customTriage" : {},
+      "presentInReferenceSnapshot" : false,
+      "firstDetectedDateTime" : "2016-09-19T10:33:47-07:00",
+      "components" : [
+        "Other"
+      ],
+      "retrievalDateTime" : "2016-09-19T10:34:14-07:00",
+      "ownerLdapServerName" : "local"
+    },
+    {
+      "mergeKey" : "6ef6cf3e3cace2552151ccb07d2f9958",
+      "cid" : 10011,
+      "stream" : "stream",
+      "triage" : {
+        "action" : "Undecided",
+        "classification" : "Unclassified",
+        "externalReference" : "",
+        "fixTarget" : "Untargeted",
+        "legacy" : "False",
+        "owner" : "admin",
+        "severity" : "Unspecified"
+      },
+      "customTriage" : {},
+      "presentInReferenceSnapshot" : false,
+      "firstDetectedDateTime" : "2016-09-19T10:33:47-07:00",
+      "components" : [
+        "Other"
+      ],
+      "retrievalDateTime" : "2016-09-19T10:34:14-07:00",
+      "ownerLdapServerName" : "local"
+    },
+    {
+      "mergeKey" : "761d339ec1f7959ef68bb0f0c3f9729f",
+      "cid" : 10008,
+      "stream" : "stream",
+      "triage" : {
+        "action" : "Undecided",
+        "classification" : "Unclassified",
+        "externalReference" : "",
+        "fixTarget" : "Untargeted",
+        "legacy" : "False",
+        "owner" : "admin",
+        "severity" : "Unspecified"
+      },
+      "customTriage" : {},
+      "presentInReferenceSnapshot" : false,
+      "firstDetectedDateTime" : "2016-09-19T10:33:47-07:00",
+      "components" : [
+        "Other"
+      ],
+      "retrievalDateTime" : "2016-09-19T10:34:14-07:00",
+      "ownerLdapServerName" : "local"
+    },
+    {
+      "mergeKey" : "892baaf3d494e0637ad2bcf5b03e08fa",
+      "cid" : 10009,
+      "stream" : "stream",
+      "triage" : {
+        "action" : "Undecided",
+        "classification" : "Unclassified",
+        "externalReference" : "",
+        "fixTarget" : "Untargeted",
+        "legacy" : "False",
+        "owner" : "admin",
+        "severity" : "Unspecified"
+      },
+      "customTriage" : {},
+      "presentInReferenceSnapshot" : false,
+      "firstDetectedDateTime" : "2016-09-19T10:33:47-07:00",
+      "components" : [
+        "Other"
+      ],
+      "retrievalDateTime" : "2016-09-19T10:34:14-07:00",
+      "ownerLdapServerName" : "local"
+    },
+    {
+      "mergeKey" : "9e98f8afc3f3fe176a7ce62a1e88dc2d",
+      "cid" : 10019,
+      "stream" : "stream",
+      "triage" : {
+        "action" : "Undecided",
+        "classification" : "Unclassified",
+        "externalReference" : "",
+        "fixTarget" : "Untargeted",
+        "legacy" : "False",
+        "owner" : "admin",
+        "severity" : "Unspecified"
+      },
+      "customTriage" : {},
+      "presentInReferenceSnapshot" : false,
+      "firstDetectedDateTime" : "2016-09-19T10:33:47-07:00",
+      "components" : [
+        "Other"
+      ],
+      "retrievalDateTime" : "2016-09-19T10:34:14-07:00",
+      "ownerLdapServerName" : "local"
+    },
+    {
+      "mergeKey" : "c2aa12387b35decd2b8b4b770b91b875",
+      "cid" : 10010,
+      "stream" : "stream",
+      "triage" : {
+        "action" : "Undecided",
+        "classification" : "Unclassified",
+        "externalReference" : "",
+        "fixTarget" : "Untargeted",
+        "legacy" : "False",
+        "owner" : "admin",
+        "severity" : "Unspecified"
+      },
+      "customTriage" : {},
+      "presentInReferenceSnapshot" : false,
+      "firstDetectedDateTime" : "2016-09-19T10:33:47-07:00",
+      "components" : [
+        "Other"
+      ],
+      "retrievalDateTime" : "2016-09-19T10:34:14-07:00",
+      "ownerLdapServerName" : "local"
+    },
+    {
+      "mergeKey" : "dee177b92d02d935b537f5b0c8b96572",
+      "cid" : 10020,
+      "stream" : "stream",
+      "triage" : {
+        "action" : "Undecided",
+        "classification" : "Unclassified",
+        "externalReference" : "",
+        "fixTarget" : "Untargeted",
+        "legacy" : "False",
+        "owner" : "admin",
+        "severity" : "Unspecified"
+      },
+      "customTriage" : {},
+      "presentInReferenceSnapshot" : false,
+      "firstDetectedDateTime" : "2016-09-19T10:33:47-07:00",
+      "components" : [
+        "Other"
+      ],
+      "retrievalDateTime" : "2016-09-19T10:34:14-07:00",
+      "ownerLdapServerName" : "local"
+    }
+  ]
+}
